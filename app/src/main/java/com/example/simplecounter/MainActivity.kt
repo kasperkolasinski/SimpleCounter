@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             if (counter >= 100) {
                 upgradeBtn.visibility = View.VISIBLE
                 upgradeBtn.setOnClickListener {
+                    Toast.makeText(it.context, "Blast Off!", Toast.LENGTH_LONG).show()
                     button.text = "Add 2"
                     button.setOnClickListener {
                         counter += 2
